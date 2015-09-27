@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"> 
+
+	<persistence-unit name="WRITE_UNIT" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLInnoDBDialect" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.connection.url" value="${write.db.url}" />
+			<property name="hibernate.connection.username" value="${write.db.username}" />
+			<property name="hibernate.connection.password" value="${write.db.password}" />
+			<property name="hibernate.cache.provider_class" value="org.hibernate.cache.HashtableCacheProvider" />
+			<property name="hibernate.show_sql" value="${write.db.show_sql}" />
+			<property name="hibernate.connection.autoReconnect" value="${write.db.autoReconnect}"/>
+			<property name="hibernate.format_sql" value="${write.db.format_sql}" /> 
+			<property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
+			<property name="connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider" />
+			<property name="hibernate.c3p0.acquire_increment" value="${write.db.acquire_increment}" />
+			<property name="hibernate.c3p0.idle_test_period" value="${write.db.idle_test_period}" />
+			<property name="hibernate.c3p0.max_size" value="${write.db.max_size}" />
+			<property name="hibernate.c3p0.min_size" value="${write.db.min_size}" />
+			<property name="hibernate.c3p0.max_statements" value="${write.db.max_statements}" />
+			<property name="hibernate.c3p0.timeout" value="${write.db.timeout}" />
+			<property name="hibernate.c3p0.preferredTestQuery" value="select 1;"/>
+		</properties>
+	</persistence-unit>
+	
+	
+	<persistence-unit name="READ_UNIT" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLInnoDBDialect" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+ 			<property name="hibernate.connection.url" value="${read.db.url}" /> 
+			<property name="hibernate.connection.username" value="${read.db.username}" />
+			<property name="hibernate.connection.password" value="${read.db.password}" />
+			<property name="hibernate.cache.provider_class" value="org.hibernate.cache.HashtableCacheProvider" />
+			<property name="hibernate.show_sql" value="${read.db.show_sql}" />
+			<property name="hibernate.connection.autoReconnect" value="${read.db.autoReconnect}"/>
+			<property name="hibernate.format_sql" value="${read.db.format_sql}" /> 
+			<property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
+			<property name="connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider" />
+			<property name="hibernate.c3p0.acquire_increment" value="${read.db.acquire_increment}" />
+			<property name="hibernate.c3p0.idle_test_period" value="${read.db.idle_test_period}" />
+			<property name="hibernate.c3p0.max_size" value="${read.db.max_size}" />
+			<property name="hibernate.c3p0.min_size" value="${read.db.min_size}" />
+			<property name="hibernate.c3p0.max_statements" value="${read.db.max_statements}" />
+			<property name="hibernate.c3p0.timeout" value="${read.db.timeout}" />
+			<property name="hibernate.c3p0.preferredTestQuery" value="select 1;"/>
+		</properties>
+	</persistence-unit>
+	
+</persistence>

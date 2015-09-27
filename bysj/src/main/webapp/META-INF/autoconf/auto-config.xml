@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<group>
+		<property name="write.db.url"/>
+		<property name="write.db.username"/>
+		<property name="write.db.password"/>
+		<property name="write.db.show_sql"/>
+		<property name="write.db.autoReconnect"/>
+		<property name="write.db.format_sql"/>
+		<property name="write.db.acquire_increment"/>
+		<property name="write.db.idle_test_period"/>
+		<property name="write.db.max_size"/>
+		<property name="write.db.min_size"/>
+		<property name="write.db.max_statements"/>
+		<property name="write.db.timeout"/>
+		<property name="read.db.url"/>
+		<property name="read.db.username"/>
+		<property name="read.db.password"/>
+		<property name="read.db.show_sql"/>
+		<property name="read.db.autoReconnect"/>
+		<property name="read.db.format_sql"/>
+		<property name="read.db.acquire_increment"/>
+		<property name="read.db.idle_test_period"/>
+		<property name="read.db.max_size"/>
+		<property name="read.db.min_size"/>
+		<property name="read.db.max_statements"/>
+		<property name="read.db.timeout"/>
+		<property name="rest.sms.endpoint"/>
+		<property name="rest.wechat.root.endpoint"/>
+		<property name="please.attention.url"/>
+		<property name="check.user.endpoint"/>
+		<property name="check.user.with.openid.endpoint"/>
+		<property name="get.args"/>
+		<property name="go.to.game.host"/>
+		<property name="context.path"/>
+		<property name="go.to.game.endpoint"/>
+		<property name="go.to.game.endpoint.v1"/>
+		<property name="wechat.app.id"/>
+		<property name="topic.share.link"/>
+		<property name="topic.share.url"/>
+		<property name="pair.share.link"/>
+		<property name="pair.share.url"/>
+		<property name="agent.app.host"/>
+		<property name="binding.share.link"/>
+		<property name="binding.share.url"/>
+		<property name="detail.share.link"/>
+		<property name="detail.share.url"/>
+		<property name="bindingshare.share.link"/>
+		<property name="bindingshare.share.url"/>
+		<property name="detailshare.share.link"/>
+		<property name="detailshare.share.url"/>
+		<property name="houserent.share.link"/>
+		<property name="houserent.share.url"/>
+		<property name="housesell.share.link"/>
+		<property name="housesell.share.url"/>
+		<property name="other.share.link"/>
+		<property name="other.share.url"/>
+		<property name="all.share.link"/>
+		<property name="all.share.url"/>
+		<property name="houserentshare.share.link"/>
+		<property name="houserentshare.share.url"/>
+		<property name="housesellshare.share.link"/>
+		<property name="housesellshare.share.url"/>
+		<property name="othershare.share.link"/>
+		<property name="othershare.share.url"/>
+		<property name="allshare.share.link"/>
+		<property name="allshare.share.url"/>
+	</group>
+	<script>
+		<generate template="persistence-xml.vm" destfile="WEB-INF/classes/META-INF/persistence.xml" charset="UTF-8"/>
+		<generate template="config-ini.vm" destfile="WEB-INF/classes/config.ini" charset="UTF-8"/>
+		<generate template="dbConfig-properties.vm" destfile="WEB-INF/classes/dbConfig.properties" charset="UTF-8"/>
+	</script>
+	
+</config>

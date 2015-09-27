@@ -1,0 +1,25 @@
+################################
+# Master DB Config
+################################
+write.db.url=${write.db.url}
+write.db.username=${write.db.username}
+write.db.password=${write.db.password}
+write.db.show_sql=${write.db.show_sql}
+write.db.format_sql=${write.db.format_sql}
+write.db.max_size=${write.db.max_size}
+write.db.min_size=${write.db.min_size}
+write.db.max_statements=${write.db.max_statements}
+write.db.timeout=${write.db.timeout}
+
+################################
+# Slave DB Config
+################################
+read.db.url=${read.db.url}
+read.db.username=${read.db.username}
+read.db.password=${read.db.password}
+read.db.show_sql=${read.db.show_sql}
+read.db.format_sql=${read.db.format_sql}
+read.db.max_size=${read.db.max_size}
+read.db.min_size=${read.db.min_size}
+read.db.max_statements=${read.db.max_statements}
+read.db.timeout=${read.db.timeout}

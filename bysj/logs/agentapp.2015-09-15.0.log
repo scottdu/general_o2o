@@ -1,0 +1,6 @@
+2015-09-15 21:39:19.264 [main] INFO  TestConstant[TestConstant.java:41] - ---------info---------
+ 2015-09-15 21:39:19.268 [main] DEBUG TestConstant[TestConstant.java:42] - ---------debug-------
+ 2015-09-15 21:39:19.268 [main] TRACE TestConstant[TestConstant.java:43] - ---------trace-------
+ 2015-09-15 21:39:19.269 [main] ERROR TestConstant[TestConstant.java:44] - ---------error-------
+ 2015-09-15 21:39:19.269 [main] WARN  TestConstant[TestConstant.java:45] - ---------warn---------
+ 
